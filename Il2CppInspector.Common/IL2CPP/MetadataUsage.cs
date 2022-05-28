@@ -62,7 +62,7 @@ namespace Il2CppInspector
 
         public static MetadataUsage FromUsagePairMihoyo(Il2CppInspector package, Il2CppMetadataUsagePair usagePair, ulong virtualAddress = 0)
         {
-            ulong mihoyoUsageVA = 0x18812AEC0;
+            ulong mihoyoUsageVA = 0x18812BF30;
             var mihoyoUsage = package.Binary.Image.ReadMappedObject<MihoyoUsages>(mihoyoUsageVA);
 
             uint index;
