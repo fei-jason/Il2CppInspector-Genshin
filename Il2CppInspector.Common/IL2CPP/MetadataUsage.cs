@@ -99,8 +99,7 @@ namespace Il2CppInspector
                     break;
             }
 
-            virtualAddress = baseAddress + 8 * index;
-
+            virtualAddress = baseAddress + 8 * usagePair.destinationindex;
             return new MetadataUsage(usageType, (int)index, destinationIndex, virtualAddress);
 
         }
